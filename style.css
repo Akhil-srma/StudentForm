@@ -1,0 +1,117 @@
+/* From uiverse.io by @alexruix */
+
+body{
+    display: flex;
+    background-image: url('_b3d8bfd0-c5ac-4bab-81ac-c1cb0f5d6ff9.jpeg');
+    /* height: 97vh; */
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+.entry-form{
+    width: 600px;
+    box-shadow: 20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
+    border-radius: 50px;
+    background: #e0e0e0;
+    margin: 45px 350px;
+    height: 95%;
+
+}
+.input-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 70px 20px 70px;
+    border-radius: 2rem;
+    background-color: #e6eded;
+    height: 95%;
+}
+.input-container h1{
+    margin: 5px 0 5px 0;
+    background-color: transparent;
+}
+.input {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    margin: 5px;
+    padding: .2rem;
+    outline: none;
+    background-color: transparent;
+    color: #777777;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 300px;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: royalblue;
+   }
+   
+   .input::placeholder {
+    color: #777777;
+   }
+   
+   .input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .4s;
+   }
+   button {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 20px 20px 20px 18px;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+    width: 100px;
+    height: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top:10px ;
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  button:hover span {
+    transform: translateX(5em);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
